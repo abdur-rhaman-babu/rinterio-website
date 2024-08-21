@@ -14,12 +14,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
+    <!-- ----font-awesome-cdn--- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <script>
         tailwind.config = {
           theme: {
             extend: {
               colors: {
                 clifford: '#da373d',
+                'renterio-btn':'#ABEF5F'
               }
             }
           }
@@ -36,8 +40,47 @@
 <body>
 
     <!-- ---header-section--- -->
-    <header>
+    <header class="bg-[#f6f6f6]">
+        <div class="navbar md:px-36 md:py-8 pl-5 flex justify-between">
+            <div class="navbar-start">
+              <div class="flex items-center gap-2 cursor-pointer">
+                <span class="bg-renterio-btn px-2 py-1 rounded-full"><i class="-rotate-45 fa-solid fa-arrow-right"></i></span>
+                <h3><a class="font-mr font-extrabold text-3xl text-[#212121]" href="#">Rinterio</a></h3>
+              </div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+               <li><a class="text-base font-extrabold font-mr text-[#494949]" href="#">Home</a></li>
+               <li><a class="text-base font-normal font-mr text-[#737373]" href="#">Services</a></li>
+               <li><a class="text-base font-normal font-mr text-[#737373]" href="#">Portfolio</a></li>
+               <li><a class="text-base font-normal font-mr text-[#737373]" href="#">Blogs</a></li>
+               <li><a class="text-base font-normal font-mr text-[#737373]" href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end gap-5 hidden lg:flex">
+                <span class="bg-white py-2 px-3 rounded-full"><i class="fa-solid fa-magnifying-glass"></i></span>
+                <span class="bg-white py-2 px-3 rounded-full"><i class="fa-solid fa-cart-shopping"></i></span>
 
+                <div class="flex items-center gap-2 cursor-pointer bg-renterio-btn py-2 px-4 rounded-full ">
+                    <h3><a class="font-mr font-extrabold text-xl text-[#1c1c1c]" href="#">Book Consult</a></h3>
+                    <span class="bg-[#1c1c1c] text-white px-2 py-1 rounded-full"><i class="-rotate-45 fa-solid fa-arrow-right"></i></span>
+                  </div>
+            </div>
+            <div class="dropdown lg:hidden">
+                <div tabindex="0" role="button" class="btn btn-ghost">
+                  <span class="bg-white text-xl py-2 px-3 rounded-full text-[#737373]"><i class="fa-solid fa-bars"></i></span>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 -ml-24 w-44 p-2 shadow">
+                  <li><a class="text-base font-extrabold font-mr text-[#494949]" href="#">Home</a></li>
+                  <li><a class="text-base font-normal font-mr text-[#737373]" href="#">Services</a></li>
+                  <li><a class="text-base font-normal font-mr text-[#737373]" href="#">Portfolio</a></li>
+                  <li><a class="text-base font-normal font-mr text-[#737373]" href="#">Blogs</a></li>
+                  <li><a class="text-base font-normal font-mr text-[#737373]" href="#">Contact Us</a></li>
+                </ul>
+              </div>    
+          </div>
     </header>
 
     <!-- ----main-section---- -->
