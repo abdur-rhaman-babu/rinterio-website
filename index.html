@@ -23,7 +23,7 @@
             extend: {
               colors: {
                 clifford: '#da373d',
-                'renterio-btn':'#ABEF5F'
+                'renterio-btn':'#ABEF5F',
               }
             }
           }
@@ -41,7 +41,7 @@
 
     <!-- ---header-section--- -->
     <header class="bg-[#f6f6f6]">
-        <div class="navbar md:px-36 md:py-8 pl-5 flex justify-between">
+        <div class="navbar md:px-10 lg:px-36 md:py-8 pl-5 py-5 flex justify-between">
             <div class="navbar-start">
               <div class="flex items-center gap-2 cursor-pointer">
                 <span class="bg-renterio-btn px-2 py-1 rounded-full"><i class="-rotate-45 fa-solid fa-arrow-right"></i></span>
@@ -57,14 +57,14 @@
                <li><a class="text-base font-normal font-mr text-[#737373]" href="#">Contact Us</a></li>
               </ul>
             </div>
-            <div class="navbar-end gap-5 hidden lg:flex">
+            <div class="navbar-end gap-5 hidden md:flex">
                 <span class="bg-white py-2 px-3 rounded-full"><i class="fa-solid fa-magnifying-glass"></i></span>
                 <span class="bg-white py-2 px-3 rounded-full"><i class="fa-solid fa-cart-shopping"></i></span>
 
                 <div class="flex items-center gap-2 cursor-pointer bg-renterio-btn py-2 px-4 rounded-full ">
                     <h3><a class="font-mr font-extrabold text-xl text-[#1c1c1c]" href="#">Book Consult</a></h3>
                     <span class="bg-[#1c1c1c] text-white px-2 py-1 rounded-full"><i class="-rotate-45 fa-solid fa-arrow-right"></i></span>
-                  </div>
+                </div>
             </div>
             <div class="dropdown lg:hidden">
                 <div tabindex="0" role="button" class="btn btn-ghost">
@@ -80,7 +80,21 @@
                   <li><a class="text-base font-normal font-mr text-[#737373]" href="#">Contact Us</a></li>
                 </ul>
               </div>    
-          </div>
+        </div>
+
+        <!-- ----banner-section---- -->
+         <section class="md:max-w-7xl md:mx-auto pb-16 mx-5">
+                <div class="text-center">
+                    <img class="mx-auto" src="./assets/banner.png" alt="">
+                    <h1 class="font-mr lg:text-6xl md:text-4xl text-3xl font-extrabold text-[#212121] leading-tight mt-5 md:mx-36">A barn house of this design has a striking appearance</h1>
+                    <p class="font-mr text-base font-medium text-[#494949] mt-6 mb-8 md:mx-36">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+
+                    <div class="flex items-center gap-2 cursor-pointer bg-[#d1fba1] py-2 px-4 rounded-full md:w-52 mx-auto">
+                      <h3 class="ml-24 md:mx-auto"><a class="font-mr font-extrabold text-xl text-[#1c1c1c]" href="#">View Details</a></h3>
+                      <span class="bg-renterio-btn px-2 py-1 rounded-full"><i class="-rotate-45 fa-solid fa-arrow-right"></i></span>
+                  </div>
+                </div>
+         </section>
     </header>
 
     <!-- ----main-section---- -->
